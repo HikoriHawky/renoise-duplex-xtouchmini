@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <ApiVersion>6</ApiVersion>
+  <AutoUpgraded>true</AutoUpgraded>
+  <Id>com.renoise.Duplex</Id>
+  <Version>1.0700000000000001</Version>
+  <Author>danoise [bjorn.nesby@googlemail.com]</Author>
+  <Name>Duplex Browser</Name>
+  <Category>Midi Controllers, OSC Controllers</Category>
+  <Description>Duplex is a collection of scripts that can run on a wide range of hardware, and offer full, bi-directional control of the Renoise mixer/effects/pattern matrix. Creates a new menu 'Duplex' in the global 'Tools' menu.</Description>
+</RenoiseScriptingTool>

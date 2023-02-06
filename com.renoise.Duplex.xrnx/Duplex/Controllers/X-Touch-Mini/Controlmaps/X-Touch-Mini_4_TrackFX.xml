@@ -1,0 +1,116 @@
+<Device>
+  <Name>X-Touch-Mini</Name>
+  <Author>Hikorin</Author>
+  <Description>Discount Mackie Control</Description>
+  <States>
+    <State name="AltOff" value="E-6" match="0" type="trigger" hide_when_inactive="true" active="true" exclusive="alt"/>
+    <State name="AltOn" value="E-6" match="127" type="trigger" hide_when_inactive="true" exclusive="alt"/>
+  </States>
+ <Parameters>
+   <Row>
+     <Column>
+      <Group name="MasterLabel" columns="2">
+        <Param text="" type="label" size="7.75" aspect="0.0632"/>
+        <Param text="" type="label" size="0.5" aspect="0.2"/>
+        <Param text="" type="label" size="5.75" aspect="0.0852"/>
+        <Param text="" type="label" size="2.5" aspect="0.2"/>
+      </Group>
+     </Column>
+     <Column>
+       <Group name="Master" orientation="horizontal" >
+         <Param value="PB" type="fader" size="0.55" aspect="1.075" orientation="horizontal" name="Master" mode="abs_7" maximum="127" minimum="0" />
+       </Group>
+     </Column>
+     <Column>
+       <Group name="Layers" orientation="horizontal" columns="1" >
+         <Param value="C-6" type="button" size="0.55" aspect="1.0" maximum="127" minimum="0" />
+         <Param value="C#6" type="button" size="0.55" aspect="1.0" maximum="127" minimum="0" />
+       </Group>
+     </Column>
+   </Row>
+   <Row>
+      <Column>
+        <Group name="LabelsA" orientation="horizontal" columns="1">
+          <Param name="E1" type="label" size="5.5" aspect="0.0891"/>
+          <Param name="E2" type="label" size="5.5" aspect="0.0891"/>
+          <Param name="E3" type="label" size="5.5" aspect="0.0891"/>
+          <Param name="E4" type="label" size="5.5" aspect="0.0891"/>
+          <Param name="E5" type="label" size="5.5" aspect="0.0891"/>
+          <Param name="E6" type="label" size="5.5" aspect="0.0891"/>
+          <Param name="E7" type="label" size="5.5" aspect="0.0891"/>
+          <Param name="E8" type="label" size="5.5" aspect="0.0891"/>
+        </Group>
+      </Column>
+      <Column>
+        <AltOff:Group name="LabelsB" orientation="horizontal" columns="1">
+          <Param name="E9" type="label" size="2.5" aspect="0.2"/>
+          <Param name="E10" type="label" size="2.5" aspect="0.2"/>
+          <Param name="E11" type="label" size="2.5" aspect="0.2"/>
+          <Param name="E12" type="label" size="2.5" aspect="0.2"/>
+          <Param name="E13" type="label" size="2.5" aspect="0.2"/>
+          <Param name="E14" type="label" size="2.5" aspect="0.2"/>
+          <Param name="E15" type="label" size="2.5" aspect="0.2"/>
+          <Param name="E16" type="label" size="2.5" aspect="0.2"/>
+        </Group>
+        <AltOn:Group name="LabelsBAlt" orientation="horizontal" columns="1">
+          <Param name="E9" type="label" size="2.5" aspect="0.2"/>
+          <Param name="E10" type="label" size="2.5" aspect="0.2"/>
+          <Param name="E11" type="label" size="2.5" aspect="0.2"/>
+          <Param name="E12" type="label" size="2.5" aspect="0.2"/>
+          <Param name="E13" type="label" size="2.5" aspect="0.2"/>
+          <Param name="E14" type="label" size="2.5" aspect="0.2"/>
+          <Param name="E15" type="label" size="2.5" aspect="0.2"/>
+          <Param text="Device Select" name="E16" type="label" size="2.5" aspect="0.2"/>
+        </Group>
+      </Column>
+      <Column>
+        <Row>
+          <AltOff:Group name="Encoders" orientation="horizontal" columns="1">
+            <Param value="CC#16" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+            <Param value="CC#17" led_mode="1" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+            <Param value="CC#18" led_mode="1" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+            <Param value="CC#19" led_mode="2" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+            <Param value="CC#20" led_mode="0" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+            <Param value="CC#21" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+            <Param value="CC#22" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+            <Param value="CC#23" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+          </Group>
+          <AltOn:Group name="EncodersAlt" orientation="horizontal" columns="1">
+            <Param value="CC#16" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+            <Param value="CC#17" led_mode="1" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+            <Param value="CC#18" led_mode="1" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+            <Param value="CC#19" led_mode="2" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+            <Param value="CC#20" led_mode="0" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+            <Param value="CC#21" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+            <Param value="CC#22" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+            <Param value="CC#23" type="dial" mode="rel_7_signed2" name="Encoder A1" maximum="127" minimum="0" size="0.55" />
+          </Group>
+        </Row>
+      </Column>
+    </Row>
+    <Row>
+      <Group name="Buttons1" orientation="horizontal" columns="8">
+       <Param value="F-6" type="button" name="Button A1" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+        <Param value="F#6" type="button" name="Button A2" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+        <Param value="E-2" type="button" name="Button A3" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+        <Param value="F-2" type="button" name="Button A4" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+        <Param value="F#2" type="button" name="Button A5" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+        <Param value="G-2" type="button" name="Button A6" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+        <Param value="G#2" type="button" name="Button A7" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+        <Param value="A-2" type="button" name="Button A8" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+      </Group>
+    </Row>
+    <Row>
+      <Group name="Buttons2" orientation="horizontal" columns="8">
+        <Param value="D#6" type="button" name="Button A9" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+        <Param value="E-6" type="button" name="Button A10" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+        <Param value="G-6" type="button" name="Button A11" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+        <Param value="G#6" type="button" name="Button A12" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+        <Param value="D-6" type="button" name="Button A13" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+        <Param value="A-6" type="button" name="Button A14" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+        <Param value="A#6" type="button" name="Button A15" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+        <Param value="B-6" type="button" name="Button A16" maximum="127" minimum="0" size="1.25" aspect="0.5" />
+      </Group>
+    </Row>
+  </Parameters>
+</Device>
